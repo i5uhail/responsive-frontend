@@ -76,5 +76,24 @@ $(document).ready(function() {
           icon.removeClass('ion-close-round');
         }
       });
-     
+
+      /* Maps */
+      var map = new GMaps({
+        div: '.map',
+        lat: 12.9538477,
+        lng: 78.2507442,
+        zoom: 10
+      });
+
+      map.addMarker({
+        lat: 12.9716477,
+        lng: 77.5946442,
+        title: 'Bangalore',
+        infoWindow: {
+          content: '<p>Our Bangalore HQ</p>'
+        }
+      });
+
   });
+
+//   12.9538477,
